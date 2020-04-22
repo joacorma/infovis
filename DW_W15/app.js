@@ -15,12 +15,12 @@ d3.csv('data/MessiRonaldo.csv', function(d) {
     };
 }).then(function(data){
     data.forEach(e => {
-        my_data_today.push(e);
+        my_data_today.push(e).then();
     });
 });
 
 console.log(my_data_today);
-console.log(my_data_today.length);
+console.log(my_data_today.length).then();
 
 var my_processed_data = [];
 for(var i = 0; i< my_data_today.length;i++){
